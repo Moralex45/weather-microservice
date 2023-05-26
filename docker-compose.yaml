@@ -1,0 +1,15 @@
+version: '1'
+
+services:
+  microservice:
+    
+  redis:
+    image: redis
+    container_name: redis
+    restart: unless-stopped
+    volumes:
+      -hostPath:containerPath:ro
+      -hostPath:containerPath:ro
+    expose:
+      - 6379
+    command: redis-server /usr/local/etc/redis/redis.conf
