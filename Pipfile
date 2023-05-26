@@ -12,6 +12,9 @@ uvicorn = "*"
 uvloop = "*"
 httptools = "*"
 aioredis = "*"
+backoff = "*"
+pydantic = "*"
+orjson = "*"
 
 [dev-packages]
 
